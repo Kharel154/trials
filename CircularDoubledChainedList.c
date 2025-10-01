@@ -49,7 +49,7 @@ void insert_tail(cell **list) {
         temp->prev = (*list)->prev;
         (*list)->prev->next = temp;
         (*list)->prev = temp;
-        // Do not move *list, tail is temp
+    
     }
 }
 
@@ -110,4 +110,3 @@ int main() {
     }
     return 0;
 }
-// Removed stray closing brace
